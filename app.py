@@ -37,6 +37,10 @@ def add_new_person(name,img1,img2,img3):
     print(len(imgs))
     print("new ID: ",nid)
     a,_,_ = u.add_new_person(imgs,nid,model_interf,face_crop,name)
+    print(a)
+    print(a.shape)
+    print(a.shape[0])
+    print(a.shape[0]-1)
     if (a.shape[0]-1!=int(nid)):
         return 'ERROR: Something goes wrong with adding this new person, current embedding shape: '+str(a.shape)
 
