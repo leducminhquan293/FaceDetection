@@ -19,7 +19,7 @@ else:
 
 def get_max_user_id():
     # get current max_user_id
-    max_id = 100  # Default value if data.csv doesn't exist or is empty
+    max_id = 99  # Default value if data.csv doesn't exist or is empty
     if os.path.isfile('./static/data.csv'):
         with open('./static/data.csv', 'r') as file:
             reader = csv.reader(file)
