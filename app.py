@@ -42,7 +42,7 @@ def add_new_person(name,img1,img2,img3):
     print("a.shape:", a.shape)
     print("a.shape[0]:", a.shape[0])
     print("a.shape[0]-1:", a.shape[0]-1)
-    if (a.shape[0]!=int(nid)):
+    if (a.shape[0]-1!=int(nid)):
         return 'ERROR: Something goes wrong with adding this new person, current embedding shape: '+str(a.shape)
 
     return "Successfully register your attendance!😎"
