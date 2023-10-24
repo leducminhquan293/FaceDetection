@@ -52,6 +52,7 @@ def checkin(img):
   img = u.resize_image(img)
   image_id,image_list,distances,person_id  = u.return_id_imgs(img,model_interf,face_crop)
   person_name = u.find_string_by_person_id(person_id)
+  print("person_id", person_id)
   return "Checked in: " + person_name
 
 #interface 1
